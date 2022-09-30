@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approved</title>
+    <title>Pending</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
-    <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
+    <link rel="stylesheet" href="../assets/vendors/simple-datatables/style.css">
 
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
     <div id="app">
         <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
-<div class="sidebar-header" style="height: 50px;margin-top: -30px">
-    <img src="C:\Users\ASUS\Desktop\lms\Leave Management\assets\images\kdu.png" alt="">
-    <span>KDU</span>
+            <div class="sidebar-header" style="height: 50px;margin-top: -30px">
+            <img src="..\assets\images\kdu.png" alt="">
+                 <span>KDU</span>
                 </div>
                <div class="sidebar-menu">
                   <ul class="menu">
@@ -39,10 +39,10 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_department.html">Add Department</a>
+                              <a href="add_department.php">Add Department</a>
                            </li>
                            <li>
-                              <a href="manage_department.html">Manage Department</a>
+                              <a href="manage_department.php">Manage Department</a>
                            </li>
                         </ul>
                      </li>
@@ -50,14 +50,14 @@
                      <li class="sidebar-item has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="fa fa-duotone fa-users"></i>
-                        <span>Employees</span>
+                                <span>Employees</span>
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_employee.html">Add Employee</a>
+                              <a href="add_employee.php">Add Employee</a>
                            </li>
                            <li>
-                              <a href="manage_employee.html">Manage Employee</a>
+                              <a href="manage_employee.php">Manage Employee</a>
                            </li>
                         </ul>
                      </li>
@@ -68,10 +68,10 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_leave_type.html">Add Leave Type</a>
+                              <a href="add_leave_type.php">Add Leave Type</a>
                            </li>
                            <li>
-                              <a href="manage_leave_type.html">Manage Leave Type</a>
+                              <a href="manage_leave_type.php">Manage Leave Type</a>
                            </li>
                         </ul>
                      </li>
@@ -82,16 +82,16 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="all_leave.html">All Leaves</a>
+                              <a href="all_leave.php">All Leaves</a>
                            </li>
                            <li>
-                              <a href="pending_leave.html">Pending Leaves</a>
+                              <a href="pending_leave.php">Pending Leaves</a>
                            </li>
                            <li>
-                              <a href="approve_leave.html">Approve Leaves</a>
+                              <a href="approve_leave.php">Approve Leaves</a>
                            </li>
                            <li>
-                              <a href="not_approve_leave.html">Not Approve Leaves</a>
+                              <a href="not_approve_leave.php">Not Approve Leaves</a>
                            </li>
                         </ul>
                      </li>
@@ -102,10 +102,10 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_user.html">Add User</a>
+                              <a href="add_user.php">Add User</a>
                            </li>
                            <li>
-                              <a href="manage_user.html">Manage Users</a>
+                              <a href="manage_user.php">Manage Users</a>
                            </li>
                         </ul>
                      </li>
@@ -143,7 +143,7 @@
                                     <li class="list-group-item border-0 align-items-start">
                                     <div class="row mb-2">
                                     <div class="col-md-12 notif">
-                                            <a href="leave_details.html"><h6 class='text-bold'>John Doe</h6>
+                                            <a href="leave_details.php"><h6 class='text-bold'>John Doe</h6>
                                             <p class='text-xs'>
                                                 applied for leave at 05-21-2021
                                             </p></a>
@@ -163,7 +163,7 @@
                         <a href="#" data-bs-toggle="dropdown"
                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                            <div class="avatar me-1">
-                              <img src="assets/images/admin.png" alt="" srcset="">
+                              <img src="../assets/images/admin.png" alt="" srcset="">
                            </div>
                            <div class="d-none d-md-block d-lg-inline-block">Hi, Admin</div>
                         </a>
@@ -182,13 +182,13 @@
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>Approved</h3>
+                            <h3>Pending</h3>
                         </div>
                         <div class="col-12 col-md-6 order-md-2 order-first">
                             <nav aria-label="breadcrumb" class='breadcrumb-header'>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html" class="text-success">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Approved</li>
+                                    <li class="breadcrumb-item"><a href="index.php" class="text-success">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Pending</li>
                                 </ol>
                             </nav>
                         </div>
@@ -213,7 +213,7 @@
                                         <td>Sick Leave</td>
                                         <td>2021-11-01</td>
                                         <td>
-                                            <span class="badge bg-success">Approved</span>
+                                            <span class="badge bg-info">Pending</span>
                                         </td>
                                         <td><a href="editDesignation.php"><i class="fa fa-eye text-success"></i></a></td>
                                     </tr>
@@ -222,7 +222,7 @@
                                         <td>Sick Leave</td>
                                         <td>2021-11-01</td>
                                         <td>
-                                            <span class="badge bg-success">Approved</span>
+                                            <span class="badge bg-info">Pending</span>
                                         </td>
                                         <td><a href="editDesignation.php"><i class="fa fa-eye text-success"></i></a></td>
                                     </tr>
@@ -231,7 +231,7 @@
                                         <td>Medical Leave</td>
                                         <td>2021-11-01</td>
                                         <td>
-                                            <span class="badge bg-success">Approved</span>
+                                            <span class="badge bg-info">Pending</span>
                                         </td>
                                         <td><a href="editDesignation.php"><i class="fa fa-eye text-success"></i></a></td>
                                     </tr>
@@ -240,7 +240,7 @@
                                         <td>Sick Leave</td>
                                         <td>2021-11-01</td>
                                         <td>
-                                            <span class="badge bg-success">Approved</span>
+                                            <span class="badge bg-info">Pending</span>
                                         </td>
                                         <td><a href="editDesignation.php"><i class="fa fa-eye text-success"></i></a></td>
                                     </tr>
@@ -253,14 +253,14 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/feather-icons/feather.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/app.js"></script>
 
-    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/js/vendors.js"></script>
+    <script src="../assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script src="../assets/js/vendors.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

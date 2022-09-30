@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Employee</title>
+    <title>Add User</title>
     
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     
-      <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+      <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
       <style type="text/css">
         .notif:hover{
           background-color: rgba(0,0,0,0.1);
                   }
       </style>
 </head>
-<body>
+<body >
     <div id="app">
         <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
-    <div class="sidebar-header" style="height: 50px;margin-top: -30px">
-        <img src="C:\Users\ASUS\Desktop\lms\Leave Management\assets\images\kdu.png" alt="">
-        <span>KDU</span>
+                <div class="sidebar-header" style="height: 50px;margin-top: -30px">
+                    <img src="..\assets\images\kdu.png" alt="">
+                        <span>KDU</span>
                 </div>
                <div class="sidebar-menu">
                   <ul class="menu">
                      <li class="sidebar-item ">
-                        <a href="index.html" class='sidebar-link'>
+                        <a href="index.php" class='sidebar-link'>
                             <i class="fa fa-solid fa-house-user"></i>
                         <span>Dashboard</span>
                         </a>
@@ -39,25 +39,25 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_department.html">Add Department</a>
+                              <a href="add_department.php">Add Department</a>
                            </li>
                            <li>
-                              <a href="manage_department.html">Manage Department</a>
+                              <a href="manage_department.php">Manage Department</a>
                            </li>
                         </ul>
                      </li>
                      
-                     <li class="sidebar-item active has-sub">
+                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="fa fa-duotone fa-users"></i>
                         <span>Employees</span>
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_employee.html">Add Employee</a>
+                              <a href="add_employee.php">Add Employee</a>
                            </li>
                            <li>
-                              <a href="manage_employee.html">Manage Employee</a>
+                              <a href="manage_employee.php">Manage Employee</a>
                            </li>
                         </ul>
                      </li>
@@ -68,10 +68,10 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_leave_type.html">Add Leave Type</a>
+                              <a href="add_leave_type.php">Add Leave Type</a>
                            </li>
                            <li>
-                              <a href="manage_leave_type.html">Manage Leave Type</a>
+                              <a href="manage_leave_type.php">Manage Leave Type</a>
                            </li>
                         </ul>
                      </li>
@@ -82,35 +82,35 @@
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="all_leave.html">All Leaves</a>
+                              <a href="all_leave.php">All Leaves</a>
                            </li>
                            <li>
-                              <a href="pending_leave.html">Pending Leaves</a>
+                              <a href="pending_leave.php">Pending Leaves</a>
                            </li>
                            <li>
-                              <a href="approve_leave.html">Approve Leaves</a>
+                              <a href="approve_leave.php">Approve Leaves</a>
                            </li>
                            <li>
-                              <a href="not_approve_leave.html">Not Approve Leaves</a>
+                              <a href="not_approve_leave.php">Not Approve Leaves</a>
                            </li>
                         </ul>
                      </li>
-                     <li class="sidebar-item  has-sub">
+                     <li class="sidebar-item active has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="fa fa-solid fa-user"></i>
                         <span>Users</span>
                         </a>
                         <ul class="submenu ">
                            <li>
-                              <a href="add_user.html">Add User</a>
+                              <a href="add_user.php">Add User</a>
                            </li>
                            <li>
-                              <a href="manage_user.html">Manage Users</a>
+                              <a href="manage_user.php">Manage Users</a>
                            </li>
                         </ul>
                      </li>
                      <li class="sidebar-item ">
-                        <a href="reports.html" class='sidebar-link'>
+                        <a href="reports.php" class='sidebar-link'>
                             <i class="fa fa-solid fa-chart-pie"></i>
                         <span>Reports</span>
                         </a>
@@ -142,13 +142,13 @@
                                     <li class="list-group-item border-0 align-items-start">
                                     <div class="row mb-2">
                                     <div class="col-md-12 notif">
-                                            <a href="leave_details.html"><h6 class='text-bold'>John Doe</h6>
+                                            <a href="leave_details.php"><h6 class='text-bold'>John Doe</h6>
                                             <p class='text-xs'>
                                                 applied for leave at 05-21-2021
                                             </p></a>
                                         </div>
                                     <div class="col-md-12 notif">
-                                            <a href="leave_details.html"><h6 class='text-bold'>Jane Doe</h6>
+                                            <a href="leave_details.php"><h6 class='text-bold'>Jane Doe</h6>
                                             <p class='text-xs'>
                                                 applied for leave at 05-21-2021
                                             </p></a>
@@ -162,7 +162,7 @@
                         <a href="#" data-bs-toggle="dropdown"
                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                            <div class="avatar me-1">
-                              <img src="assets/images/admin.png" alt="" srcset="">
+                              <img src="../assets/images/admin.png" alt="" srcset="">
                            </div>
                            <div class="d-none d-md-block d-lg-inline-block">Hi, Admin</div>
                         </a>
@@ -170,7 +170,7 @@
                            <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
                            <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="login.html"><i data-feather="log-out"></i> Logout</a>
+                           <a class="dropdown-item" href="login.php"><i data-feather="log-out"></i> Logout</a>
                         </div>
                      </li>
                   </ul>
@@ -181,13 +181,13 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Add Employee</h3>
+                <h3>Add User</h3>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class='breadcrumb-header'>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-success">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Add Employee</li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-success">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Add User</li>
                     </ol>
                 </nav>
             </div>
@@ -205,74 +205,28 @@
                         <div class="card-body">
                             <form class="form">
                                 <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Full Name</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="full name" id="first-name-icon">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">ID Number</label>
+                                            <label for="first-name-icon">Contact</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="id number" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-hash"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Gender</label>
-                                            <div class="position-relative">
-                                                <fieldset class="form-group">
-                                                    <select class="form-select" id="basicSelect">
-                                                        <option>Male</option>
-                                                        <option>Female</option>
-                                                    </select>
-                                                </fieldset>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">First Name</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="first name" id="first-name-icon">
+                                                <input type="text" class="form-control" placeholder="contact" id="first-name-icon">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-user"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Middle Name</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="middle name" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><div class="col-md-4 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Last Name</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="last name" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Age</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="age" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-12">
+                                    </div><div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Email</label>
                                             <div class="position-relative">
@@ -283,55 +237,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Contact</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="contact" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-phone"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Profile</label>
-                                            <div class="position-relative">
-                                                <input type="file" class="form-control" placeholder="" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="country-floating">Deapartment</label>
-                                                <fieldset class="form-group">
-                                                    <select class="form-select" id="basicSelect">
-                                                        <option>IT</option>
-                                                        <option>ENGINEERING</option>
-                                                        <option>HR</option>
-                                                        <option>FINANCE</option>
-                                                    </select>
-                                                </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="company-column">Designation</label>
-                                                <fieldset class="form-group">
-                                                    <select class="form-select" id="basicSelect">
-                                                        <option>IT</option>
-                                                        <option>MANAGER</option>
-                                                        <option>SUPERVISOR</option>
-                                                        <option>ENGINEER</option>
-                                                    </select>
-                                                </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-md-4 col-12">
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Username</label>
                                             <div class="position-relative">
@@ -342,14 +248,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-md-4 col-12">
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Password</label>
                                             <div class="position-relative">
-                                                <input type="password" class="form-control" placeholder="passsword" id="first-name-icon">
+                                                <input type="password" class="form-control" placeholder="password" id="first-name-icon">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-key"></i>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">User Category</label>
+                                            <div class="position-relative">
+                                                <fieldset class="form-group">
+                                                    <select class="form-select" id="basicSelect">
+                                                        <option>Admin</option>
+                                                        <option>Staff</option>
+                                                    </select>
+                                                </fieldset>
                                             </div>
                                         </div>
                                     </div>
@@ -369,10 +288,10 @@
 
         </div>
     </div>
-    <script src="assets/js/feather-icons/feather.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

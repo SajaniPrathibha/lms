@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Leave</title>
+    <title>Update Profile</title>
     
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     
-      <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+      <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
 </head>
 <body>
     <div id="app">
         <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
     <div class="sidebar-header" style="height: 50px;margin-top: -30px">
-        <img src="C:\Users\ASUS\Desktop\lms\Leave Management\assets\images\kdu.png" alt="">
+    <img src="..\assets\images\kdu.png" alt="">
         <span>KDU</span>
                 </div>
                <div class="sidebar-menu">
                   <ul class="menu">
                      <li class="sidebar-item ">
-                        <a href="employee.html" class='sidebar-link'>
+                        <a href="employee.php" class='sidebar-link'>
                             <i class="fa fa-solid fa-house-user"></i>
                         <span>Dashboard</span>
                         </a>
                      </li>
-                     <li class="sidebar-item active">
-                        <a href="apply_leave.html" class='sidebar-link'>
+                     <li class="sidebar-item">
+                        <a href="apply_leave.php" class='sidebar-link'>
                             <i class="fa fa-duotone fa-plane-arrival"></i>
                         <span>Apply Leave</span>
                         </a>
                      </li>
                      <li class="sidebar-item ">
-                        <a href="leave_status.html" class='sidebar-link'>
+                        <a href="leave_status.php" class='sidebar-link'>
                             <i class="fa fa-duotone fa-plane-arrival"></i>
                         <span>Leave Status</span>
                         </a>
@@ -53,20 +53,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
-                      
                      <li class="dropdown">
                         <a href="#" data-bs-toggle="dropdown"
                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                            <div class="avatar me-1">
-                              <img src="assets/images/admin.png" alt="" srcset="">
+                              <img src="../assets/images/admin.png" alt="" srcset="">
                            </div>
                            <div class="d-none d-md-block d-lg-inline-block">Hi, Employee</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                           <a class="dropdown-item" href="update.html"><i data-feather="user"></i> Account</a>
-                           <a class="dropdown-item" href="update_password.html"><i data-feather="settings"></i> Settings</a>
+                           <a class="dropdown-item" href="update.php"><i data-feather="user"></i> Account</a>
+                           <a class="dropdown-item" href="update_password.php"><i data-feather="settings"></i> Settings</a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="login.html"><i data-feather="log-out"></i> Logout</a>
+                           <a class="dropdown-item" href="login.php"><i data-feather="log-out"></i> Logout</a>
                         </div>
                      </li>
                   </ul>
@@ -77,13 +76,13 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Apply for Leave</h3>
+                <h3>Update Profile</h3>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class='breadcrumb-header'>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-success">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Leave Application</li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-success">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Update Profile</li>
                     </ol>
                 </nav>
             </div>
@@ -101,150 +100,151 @@
                         <div class="card-body">
                             <form class="form">
                                 <div class="row">
-                                    <div class="col-md-10 col-12"></div>
-                                    <div class="col-md-2 col-12">
-                                        <div class="form-group has-icon-left">
-                                            
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="EPF NO" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-
-                                </div>
-
-                                <div class="row">
-
-                                    
-                                    <br/>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">user name</label>
+                                            <label for="first-name-icon">ID Number</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="name" id="first-name-icon">
+                                                <input type="text" class="form-control" placeholder="id number" id="first-name-icon" value="123456">
                                                 <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-user"></i>
+                                                    <i class="fa fa-user"></i>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">position</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="position" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-sharp fa-solid fa-user-tie"></i>
-                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                   
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">Select Leave Type</label>
+                                            <label for="first-name-icon">Gender</label>
                                             <div class="position-relative">
                                                 <fieldset class="form-group">
                                                     <select class="form-select" id="basicSelect">
-                                                        <option>Casual Leave</option>
-                                                        <option>Sick Leave</option>
-                                                        <option>vacation</option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>other</option>
                                                     </select>
                                                 </fieldset>
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <div class="col-md-4 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">First Name</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="first name" id="first-name-icon" value="John">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Middle Name</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="middle name" id="first-name-icon" value="M.">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="col-md-4 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Last Name</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="last name" id="first-name-icon" value="Doe">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Age</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="age" id="first-name-icon" value="24">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Email</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="email" id="first-name-icon" value="john@gmail.com">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Contact</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="contact" id="first-name-icon" value="091234567898">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="first-name-icon">Profile</label>
+                                            <div class="position-relative">
+                                                <input type="file" class="form-control" placeholder="" id="first-name-icon">
+                                                <div class="form-control-icon">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="country-floating">Deapartment</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-select" id="basicSelect">
+                                                        <option>IT</option>
+                                                        <option>ENGINEERING</option>
+                                                        <option>HR</option>
+                                                        <option>FINANCE</option>
+                                                    </select>
+                                                </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="company-column">Designation</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-select" id="basicSelect">
+                                                        <option>IT</option>
+                                                        <option>MANAGER</option>
+                                                        <option>SUPERVISOR</option>
+                                                        <option>ENGINEER</option>
+                                                    </select>
+                                                </fieldset>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">date of first appoinment</label>
+                                            <label for="first-name-icon">Username</label>
                                             <div class="position-relative">
-                                                <input type="date" class="form-control" placeholder="first name" id="first-name-icon">
+                                                <input type="text" class="form-control" placeholder="username" id="first-name-icon">
                                                 <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-calendar-week"></i>
+                                                    <i class="fa fa-user"></i>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">From Date</label>
+                                            <label for="first-name-icon">Password</label>
                                             <div class="position-relative">
-                                                <input type="date" class="form-control" placeholder="first name" id="first-name-icon">
+                                                <input type="password" class="form-control" placeholder="passsword" id="first-name-icon">
                                                 <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-calendar-week"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">To Date</label>
-                                            <div class="position-relative">
-                                                <input type="date" class="form-control" placeholder="first name" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-calendar-week"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">leave taken in current year</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="taken leave" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-duotone fa-plane-arrival"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">days needed</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="days" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-calendar-plus"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">reason</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="reason" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">person replace the works</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="replaced person" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">address when on leave</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="address" id="first-name-icon">
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-solid fa-house-user"></i>
+                                                    <i class="fa fa-key"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,10 +265,10 @@
 
         </div>
     </div>
-    <script src="assets/js/feather-icons/feather.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/app.js"></script>
     
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

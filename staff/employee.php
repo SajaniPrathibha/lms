@@ -4,19 +4,19 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Employee Leave Management System</title>
-      <link rel="stylesheet" href="assets/css/bootstrap.css">
-      <script defer src="assets/fontawesome/js/all.min.js"></script>
-      <link rel="stylesheet" href="assets/vendors/chartjs/Chart.min.css">
-      <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-      <link rel="stylesheet" href="assets/css/app.css">
-      <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+      <link rel="stylesheet" href="../assets/css/bootstrap.css">
+      <script defer src="../assets/fontawesome/js/all.min.js"></script>
+      <link rel="stylesheet" href="../assets/vendors/chartjs/Chart.min.css">
+      <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+      <link rel="stylesheet" href="../assets/css/app.css">
+      <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
    </head>
    <body>
       <div id="app">
          <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
                <div class="sidebar-header" style="height: 50px;margin-top: -30px">
-                <img src="C:\Users\ASUS\Desktop\lms\Leave Management\assets\images\kdu.png" alt="">
+               <img src="..\assets\images\kdu.png" alt="">
                 <span>KDU</span>
                 </div>
                <div class="sidebar-menu">
@@ -39,6 +39,12 @@
                         <span>Leave Status</span>
                         </a>
                      </li>
+                     <li class="sidebar-item ">
+                        <a href="apply_leave.html" class='sidebar-link'>
+                          <i class="fa fa-duotone fa-plane-arrival"></i>
+                        <span>Update profile</span>
+                        </a>
+                     </li>
                   </ul>
                </div>
                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
@@ -59,7 +65,7 @@
                         <a href="#" data-bs-toggle="dropdown"
                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                            <div class="avatar me-1">
-                              <img src="assets/images/admin.png" alt="" srcset="">
+                              <img src="../assets/images/admin.png" alt="" srcset="">
                            </div>
                            <div class="d-none d-md-block d-lg-inline-block">Hi, Employee</div>
                         </a>
@@ -95,7 +101,8 @@
                 </div>
               </div>
             </div>
-          </div>          <div class="col-xl-4 col-md-12 mb-4">
+          </div>   
+          <div class="col-xl-4 col-md-12 mb-4">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between p-md-1">
@@ -149,12 +156,12 @@
             </div>
          </div>
       </div>
-      <script src="assets/js/feather-icons/feather.min.js"></script>
-      <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-      <script src="assets/js/app.js"></script>
-      <script src="assets/vendors/chartjs/Chart.min.js"></script>
-      <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-      <script src="assets/js/pages/dashboard.js"></script>
-      <script src="assets/js/main.js"></script>
+      <script src="../assets/js/feather-icons/feather.min.js"></script>
+      <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+      <script src="../assets/js/app.js"></script>
+      <script src="../assets/vendors/chartjs/Chart.min.js"></script>
+      <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script>
+      <script src="../assets/js/pages/dashboard.js"></script>
+      <script src="../assets/js/main.js"></script>
    </body>
 </html>
