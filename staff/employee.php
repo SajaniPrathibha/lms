@@ -22,25 +22,25 @@
                <div class="sidebar-menu">
                   <ul class="menu">
                      <li class="sidebar-item active ">
-                        <a href="employee.html" class='sidebar-link'>
+                        <a href="employee.php" class='sidebar-link'>
                           <i class="fa fa-solid fa-house-user"></i>
                         <span>Dashboard</span>
                         </a>
                      </li>
                      <li class="sidebar-item ">
-                        <a href="apply_leave.html" class='sidebar-link'>
+                        <a href="apply_leave.php" class='sidebar-link'>
                           <i class="fa fa-duotone fa-plane-arrival"></i>
                         <span>Apply Leave</span>
                         </a>
                      </li>
                      <li class="sidebar-item ">
-                        <a href="leave_status.html" class='sidebar-link'>
+                        <a href="leave_status.php" class='sidebar-link'>
                           <i class="fa fa-duotone fa-plane-arrival"></i>
                         <span>Leave Status</span>
                         </a>
                      </li>
                      <li class="sidebar-item ">
-                        <a href="apply_leave.html" class='sidebar-link'>
+                        <a href="update.php" class='sidebar-link'>
                           <i class="fa fa-duotone fa-plane-arrival"></i>
                         <span>Update profile</span>
                         </a>
@@ -70,10 +70,10 @@
                            <div class="d-none d-md-block d-lg-inline-block">Hi, Employee</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                           <a class="dropdown-item" href="update.html"><i data-feather="user"></i> Account</a>
-                           <a class="dropdown-item" href="update_password.html"><i data-feather="settings"></i> Settings</a>
+                           <a class="dropdown-item" href="update.php"><i data-feather="user"></i> Account</a>
+                           <a class="dropdown-item" href="update_password.php"><i data-feather="settings"></i> Settings</a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="login.html"><i data-feather="log-out"></i> Logout</a>
+                           <a class="dropdown-item" href="login.php"><i data-feather="log-out"></i> Logout</a>
                         </div>
                      </li>
                   </ul>
