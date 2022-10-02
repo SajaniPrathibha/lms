@@ -1,3 +1,82 @@
+
+<?php 
+
+
+$otp="";
+$email="";
+require_once("Connection/Connection.php");
+session_start(); 
+
+///////// send email function
+
+if (isset($_POST['emailSend'])) {
+    $randOtp=rand(10,10000);
+    $email=$_POST["email"];
+    
+    $quary = "SELECT * FROM users WHERE email='$email'";
+    $result=mysqli_query($conn, $quary);
+    $user_row = mysqli_fetch_array($result);
+    if($user_row){
+
+        /////////////////////////////////////////////
+//      email send
+        
+        $msg = "dear madam/sir,\n OTP - $randOtp";
+
+        $msg = wordwrap($msg,70);
+        $header = 'From: sms.prathibha@gmail.com' . "\r\n" .
+        'MIME-Version: 1.0' . "\r\n" .
+        'Content-type: text/html; charset=utf-8';
+       
+
+        if(mail("$email","LMS Forget Password OTP",$msg,$header)){
+            echo 'email sent';
+        }else{
+            echo 'error email';
+        }
+        
+        //////////////////////////////////////////
+
+        /////////////////////////////////////////
+//      save to db        
+
+        $emailCheckQuary = "SELECT * FROM otp WHERE email_id='$email'";
+        $emailCheckResult=mysqli_query($conn, $emailCheckQuary);
+        $email_row = mysqli_fetch_array($emailCheckResult);
+        if($email_row){
+            $otpQuary="UPDATE otp SET otp=$randOtp where email_id='$email'";
+            if (mysqli_query($conn, $otpQuary)) {
+                echo "Record updated successfully";
+              } else {
+                echo "Error updating record: " . mysqli_error($conn);
+              }
+        }
+        else{
+            $otpQuary="INSERT INTO otp ( email_id, otp) VALUES('$email',$randOtp) ";
+            if (mysqli_query($conn, $otpQuary)) {
+                echo "Record inserted successfully";
+              } else {
+                echo "Error inserting record: " . mysqli_error($conn);
+              }
+        }
+        ///////////////////////////////////////
+    }
+
+}
+
+/////// check otp and redirect change password
+
+if(isset($_POST['otpBtn'])){
+    $otp=$_POST["otp"];
+    
+    $otpQuary= "SELECT * from otp where otp= $otp";
+    $otpResult= mysqli_query($conn,$otpQuary);
+    $otp_Raw=mysqli_fetch_array($otpResult);
+    if($otp_Raw){
+        Header("Location: updat_password.php?email_id=".$otp_Raw['email_id']);
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +111,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form">
+                        <form id="login" method="post"  action="">
 
                                 <div class="row" >
                                     <div class="col-md-8 col-12">
@@ -46,20 +125,20 @@
                                             <label for="first-name-icon">email</label>
                                             <div class="position-relative">
                                                 <input type="text" class="form-control" placeholder="email"
-                                                    id="first-name-icon">
+                                                    id="first-name-icon" name="email" require>
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-user"></i>
                                                 </div>
                                             </div>
                                         </div>
-
-
+                                        <button type="submit" name="emailSend" class="btn btn-primary me-1 mb-1">send</button>
+                                        <button type="submit" class="btn btn-secondary me-1 mb-1">Reset</button>
 
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">OTP</label>
                                             <div class="position-relative">
                                                 <input type="text" class="form-control" placeholder="OTP"
-                                                    id="first-name-icon">
+                                                    id="first-name-icon" name="otp" require>
                                                 <div class="form-control-icon">
                                                     <i class="fa fas fa-lock"></i>
                                                 </div>
@@ -67,8 +146,8 @@
                                             </div>
                                         </div>
                                         
-                                        <button type="submit" class="btn btn-primary me-1 mb-1">change</button>
-                                        <button type="submit" class="btn btn-secondary me-1 mb-1">Reset</button>
+                                        <button type="submit" name="otpBtn" class="btn btn-primary me-1 mb-1">confirm</button>
+                                        
 
                                     </div>
                                 </div>

@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $uid = $_POST['userId'];
     $pwd = $_POST['password'];
+    
     $encry_pwd = md5($pwd); 
 
     $quary = "SELECT * FROM users WHERE userId='$uid' AND password= '$encry_pwd'";
@@ -127,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                                 </div>
                                             </div>
-                                            <a href="change_password.html">Forgot Password?</a><br/><br/>
+                                            <a href="change_password.php">Forgot Password?</a><br/><br/>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">login</button>
                                             <button type="submit" class="btn btn-secondary me-1 mb-1">Reset</button>
                                             <small style="color: red;"><?php echo $error;?></small>

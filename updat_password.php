@@ -9,20 +9,29 @@ $npw="";
 $cnpw="";
 require_once("Connection/Connection.php");
 session_start(); 
+$email_id=$_REQUEST['email_id'];
+
 ?>
 <?php 
-if(isset($_SESSION["userId"]))  
-{  
-   if($_SESSION['user_role']=="admin"){
-       header("location:Admin/index.php"); 
-   }else if($_SESSION['user_role']=="staff"){
-       header("location:Staff/index.php"); 
-   }
+// if(isset($_SESSION["userId"]))  
+// {  
+//    if($_SESSION['user_role']=="admin"){
+//        header("location:Admin/index.php"); 
+//    }else if($_SESSION['user_role']=="staff"){
+//        header("location:Staff/index.php"); 
+//    }
       
-} 
+// } 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $uid = $_POST['userId'];
+    $userQuary="SELECT * from users where email='$email_id'";
+    $idResult= mysqli_query($conn,$userQuary);
+    $user_Raw=mysqli_fetch_array($idResult);
+    if($user_Raw){
+        
+        $uid=$user_Raw['userId'];
+        $role=$user_Raw['user_role'];
+
     $npw = $_POST['newPassword'];
     $cnpw = $_POST['confermPassword'];
 
@@ -30,14 +39,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $encry_pwd = md5($npw);
         $quary="UPDATE users SET password='$encry_pwd'  where userId ='$uid'";
         if (mysqli_query($conn, $quary)) {
-            echo "Record updated successfully";
+
+            Header("Location: Login.php");
+
           } else {
             echo "Error updating record: " . mysqli_error($conn);
           }
 
     }else{
-        echo "\n Please Enter Same password in new and confirm password fields";
+        $error="Please Enter Same password in new and confirm password field";
+        //echo "\n Please Enter Same password in new and confirm password fields";
     }
+}
 
 // UPDATE users SET password=$npw  where userId =$uid;
 }
@@ -89,16 +102,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                     <div class="col-md-4 col-12">
                                         <center><img src="assets/images/avatar.svg" width="100px" height="100px"  ></center>
-                                        <div class="form-group has-icon-left">
-                                            <label for="first-name-icon">user id</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="Id"
-                                                    id="first-name-icon" name="userId" required>
-                                                <div class="form-control-icon">
-                                                    <i class="fa fa-user"></i>
-                                                </div>
-                                            </div>
-                                        </div>
 
 
                                         <div class="form-group has-icon-left">
@@ -125,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         </div>
                                         
                                         <button type="submit" class="btn btn-primary me-1 mb-1">login</button>
-                                        <button type="submit" class="btn btn-secondary me-1 mb-1">Reset</button>
+                                        <button type="reset" class="btn btn-secondary me-1 mb-1">Reset</button>
                                         <small style="color: red;"><?php echo $error;?></small>
                                     </div>
                                 </div>
