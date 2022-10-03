@@ -1,7 +1,8 @@
 
 <?php 
-
-
+$otpError="";
+$error="";
+$success="";
 $otp="";
 $email="";
 require_once("Connection/Connection.php");
@@ -30,9 +31,9 @@ if (isset($_POST['emailSend'])) {
        
 
         if(mail("$email","LMS Forget Password OTP",$msg,$header)){
-            echo 'email sent';
+            $success= 'email sent';
         }else{
-            echo 'error email';
+            $error='error email';
         }
         
         //////////////////////////////////////////
@@ -74,6 +75,8 @@ if(isset($_POST['otpBtn'])){
     $otp_Raw=mysqli_fetch_array($otpResult);
     if($otp_Raw){
         Header("Location: updat_password.php?email_id=".$otp_Raw['email_id']);
+    }else{
+        $otpError="Incorrect OTP";
     }
 }
 ?>
@@ -133,6 +136,8 @@ if(isset($_POST['otpBtn'])){
                                         </div>
                                         <button type="submit" name="emailSend" class="btn btn-primary me-1 mb-1">send</button>
                                         <button type="submit" class="btn btn-secondary me-1 mb-1">Reset</button>
+                                        <small style="color: red;"><?php echo $error;?></small>
+                                        <small style="color: green;"><?php echo $success;?></small>
 
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">OTP</label>
@@ -147,7 +152,7 @@ if(isset($_POST['otpBtn'])){
                                         </div>
                                         
                                         <button type="submit" name="otpBtn" class="btn btn-primary me-1 mb-1">confirm</button>
-                                        
+                                        <small style="color: red;"><?php echo $otpError;?></small>
 
                                     </div>
                                 </div>

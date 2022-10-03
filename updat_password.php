@@ -1,5 +1,6 @@
 <?php 
 $error="";
+$erroro="";
 $uid="";
 $pwd="";
 $encry_pwd="";
@@ -43,11 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Header("Location: Login.php");
 
           } else {
-            echo "Error updating record: " . mysqli_error($conn);
+            $error= "Error updating record: " . mysqli_error($conn);
           }
 
     }else{
-        $error="Please Enter Same password in new and confirm password field";
+        $error="Please Enter Same passwords";
         //echo "\n Please Enter Same password in new and confirm password fields";
     }
 }
@@ -130,6 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         <button type="submit" class="btn btn-primary me-1 mb-1">login</button>
                                         <button type="reset" class="btn btn-secondary me-1 mb-1">Reset</button>
                                         <small style="color: red;"><?php echo $error;?></small>
+                                        
                                     </div>
                                 </div>
                             </form>
