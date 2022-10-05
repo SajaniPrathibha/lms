@@ -39,6 +39,12 @@
                         <span>Leave Status</span>
                         </a>
                      </li>
+                     <li class="sidebar-item ">
+                        <a href="update.php" class='sidebar-link'>
+                          <i class="fa fa-duotone fa-plane-arrival"></i>
+                        <span>Update profile</span>
+                        </a>
+                     </li>
                   </ul>
     </div>
     <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
