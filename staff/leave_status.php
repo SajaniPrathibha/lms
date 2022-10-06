@@ -117,9 +117,9 @@
                                 <tbody>
                                     <tr>
                                         <td>Casual Leave</td>
-                                        <td>2021-11-02</td>
-                                        <td>2021-11-05</td>
-                                        <td>2021-11-01</td>
+                                        <td>2022-10-01</td>
+                                        <td>2022-10-04</td>
+                                        <td>2022-09-30</td>
                                         <td>waiting for approval</td>
                                         <td><span class="badge bg-info">Pending</span></td>
                                     </tr>

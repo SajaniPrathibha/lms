@@ -135,7 +135,7 @@
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">First Name</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="first name" id="first-name-icon" value="John">
+                                                <input type="text" class="form-control" placeholder="first name" id="first-name-icon" value="Kamal">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-user"></i>
                                                 </div>
@@ -146,7 +146,7 @@
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Middle Name</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="middle name" id="first-name-icon" value="M.">
+                                                <input type="text" class="form-control" placeholder="middle name" id="first-name-icon" value="R">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-user"></i>
                                                 </div>
@@ -156,7 +156,7 @@
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Last Name</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="last name" id="first-name-icon" value="Doe">
+                                                <input type="text" class="form-control" placeholder="last name" id="first-name-icon" value="perera">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-user"></i>
                                                 </div>
@@ -178,7 +178,7 @@
                                         <div class="form-group has-icon-left">
                                             <label for="first-name-icon">Email</label>
                                             <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="email" id="first-name-icon" value="john@gmail.com">
+                                                <input type="text" class="form-control" placeholder="email" id="first-name-icon" value="kamal@gmail.com">
                                                 <div class="form-control-icon">
                                                     <i class="fa fa-envelope"></i>
                                                 </div>
@@ -213,9 +213,9 @@
                                                 <fieldset class="form-group">
                                                     <select class="form-select" id="basicSelect">
                                                         <option>IT</option>
-                                                        <option>ENGINEERING</option>
-                                                        <option>HR</option>
-                                                        <option>FINANCE</option>
+                                                        <option>ARC</option>
+                                                        <option>QS</option>
+                                                        <option>SVS</option>
                                                     </select>
                                                 </fieldset>
                                         </div>
@@ -225,10 +225,10 @@
                                             <label for="company-column">Designation</label>
                                                 <fieldset class="form-group">
                                                     <select class="form-select" id="basicSelect">
-                                                        <option>IT</option>
-                                                        <option>MANAGER</option>
-                                                        <option>SUPERVISOR</option>
-                                                        <option>ENGINEER</option>
+                                                        
+                                                        <option>LECTURER</option>
+                                                        <option>INSTRUCTOR</option>
+                                                        
                                                     </select>
                                                 </fieldset>
                                         </div>

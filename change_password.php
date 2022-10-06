@@ -118,7 +118,7 @@ if(isset($_POST['otpBtn'])){
 
                                 <div class="row" >
                                     <div class="col-md-8 col-12">
-                                        <img src="assets/images/bgt.svg" style="height: 400px;">
+                                        <img src="assets/images/bg2.svg" style="height: 400px;">
 
                                     </div>
 

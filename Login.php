@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                 <div class="row" >
                                     <div class="col-md-8 col-12">
-                                        <img src="assets/images/bg.svg" style="height: 400px;">
+                                        <img src="assets/images/bg1.svg" style="height: 400px;">
 
                                     </div>
                                     
